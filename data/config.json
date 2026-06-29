@@ -5,11 +5,20 @@
     "api_key_env": "OPENAI_API_KEY",
     "base_url_env": "OPENAI_BASE_URL"
   },
-  "sources": [
-    "https://news.ycombinator.com",
-    "https://www.reddit.com/r/worldnews",
-    "https://www.bbc.com/news"
-  ],
+  "sources": {
+    "hacker_news": {
+      "enabled": true,
+      "url": "https://news.ycombinator.com"
+    },
+    "reddit_worldnews": {
+      "enabled": true,
+      "url": "https://www.reddit.com/r/worldnews"
+    },
+    "bbc_news": {
+      "enabled": true,
+      "url": "https://www.bbc.com/news"
+    }
+  },
   "summary": {
     "language": "zh",
     "max_length": 500
