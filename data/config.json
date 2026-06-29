@@ -1,7 +1,7 @@
 {
   "ai": {
     "provider": "openai",
-    "model": "abab6.5s-chat",
+    "model": "MiniMax-M3",
     "api_key_env": "OPENAI_API_KEY",
     "base_url_env": "OPENAI_BASE_URL",
     "temperature": 0.3,
