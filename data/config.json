@@ -1,0 +1,62 @@
+{
+  "ai": {
+    "provider": "openai",
+    "model": "MiniMax-M3",
+    "api_key_env": "OPENAI_API_KEY",
+    "base_url_env": "OPENAI_BASE_URL",
+    "temperature": 0.3,
+    "max_tokens": 4096
+  },
+  "sources": {
+    "rss": [
+      {
+        "name": "国内新闻",
+        "url": "http://rss.sina.com.cn/news/china.xml",
+        "enabled": true
+      },
+      {
+        "name": "国际新闻",
+        "url": "http://rss.sina.com.cn/news/world.xml",
+        "enabled": true
+      }
+    ],
+    "reddit": {
+      "enabled": true,
+      "subreddits": [
+        {
+          "subreddit": "worldnews",
+          "enabled": true
+        },
+        {
+          "subreddit": "environment",
+          "enabled": true
+        },
+        {
+          "subreddit": "scifi",
+          "enabled": true
+        },
+        {
+          "subreddit": "entertainment",
+          "enabled": true
+        },
+        {
+          "subreddit": "education",
+          "enabled": true
+        },
+        {
+          "subreddit": "culture",
+          "enabled": true
+        }
+      ]
+    }
+  },
+  "filtering": {
+    "ai_score_threshold": 5.0,
+    "time_window_hours": 24,
+    "max_items": 15
+  },
+  "summary": {
+    "language": "zh",
+    "max_length": 600
+  }
+}
