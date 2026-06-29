@@ -34,8 +34,9 @@ jobs:
   OPENAI_API_KEY: "sk-api-6l3HQw-g7XpQ7AnHFtsAhO38KZbnRQSAoPNOsLYn33Z_L8qu7RCnFTfqqAb_Qu4rDV352OOfk04fmnk0pVFcUIIiDSvVGTbLHod4ZA3xxtIv8hvSssWTODY"
   OPENAI_BASE_URL: "https://api.minimaxi.com/v1"
   HORIZON_WEBHOOK_URL: "https://example.com"
-        run: uv run horizon --hours 24
 
+run: uv run horizon --hours 24
+  
       - name: Set current date as environment variable
         run: echo "DATE=$(date +'%Y-%m-%d')" >> $GITHUB_ENV
 
